@@ -1,29 +1,29 @@
-/* Центрирање на целото тело на страната */
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Поставува елементите вертикално */
-    height: 100vh; /* 100% висина на прозорецот */
+    flex-direction: column; 
+    height: 100vh;
     margin: 0;
-    background-color: #f7f7f7; /* Светла позадина */
+    background-color: #f7f7f7; 
   }
   
-  /* Центрирање на самата форма */
+
   .formContainer {
-    background-color: #fff0f6; /* Светло розова позадина */
+    background-color: #fff0f6; 
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Лесна сенка */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     width: 100%;
     max-width: 400px;
-    margin-top: 20px; /* Простор помеѓу насловот и формата */
+    margin-top: 20px; 
   }
   
-  /* Наслов за формата */
+
   .formContainer h2 {
     text-align: center;
-    color: #ff4f87; /* Светло розова боја за наслов */
+    color: #ff4f87; 
     font-size: 24px;
     margin-bottom: 30px;
   }
@@ -32,24 +32,24 @@ body {
   .formContainer input {
     width: 100%;
     padding: 12px;
-    margin-bottom: 20px; /* Простор помеѓу полињата */
-    border: 2px solid #ff80ab; /* Розова рамка */
+    margin-bottom: 20px; 
+    border: 2px solid #ff80ab; 
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s;
   }
   
-  /* При промена на бојата на input кога е во фокус */
+
   .formContainer input:focus {
-    border-color: #ff3385; /* Потемна розова боја при фокус */
+    border-color: #ff3385;
     outline: none;
   }
   
-  /* Копче за регистрација */
+
   .formContainer button {
     width: 100%;
     padding: 14px;
-    background-color: #ff80ab; /* Светло розова позадина */
+    background-color: #ff80ab; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -58,14 +58,14 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  /* Променување на бојата на копчето кога е на ховер */
+  
   .formContainer button:hover {
-    background-color: #ff3385; /* Потемна розова боја на ховер */
+    background-color: #ff3385; 
   }
   
-  /* Порака за грешка */
+
   .formContainer p {
-    color: #ff3385; /* Розова боја за порака */
+    color: #ff3385; 
     font-size: 14px;
     text-align: center;
   }
