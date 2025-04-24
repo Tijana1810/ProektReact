@@ -1,0 +1,41 @@
+/* Navbar.module.css */
+.navbar {
+  position: fixed; /* Фиксирање на врвот */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ширина на целата лента */
+  background-color: #ffb6c1; /* Светло розова боја */
+  padding: 15px 0; /* Простор околу линковите */
+  display: flex;
+  justify-content: center; /* Центрирање на линковите */
+  align-items: center; /* Центрирање по вертикала */
+  z-index: 1000; /* Задржување на лентата на врвот */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лесна сенка за ефект */
+}
+
+.title {
+  color: #333; /* Темна боја за насловот */
+  font-size: 24px; /* Големина на насловот */
+  font-weight: bold; /* Задебелен текст */
+  margin-right: 20px; /* Простор помеѓу насловот и линковите */
+}
+
+.nav-links {
+  display: flex; /* Распоредува линковите во една линија */
+  justify-content: center; /* Центрирање на линковите */
+  align-items: center; /* Центрирање по вертикала */
+}
+
+.nav-links a {
+  color: #333; /* Темна боја за линковите */
+  text-decoration: none; /* Без подебел текст */
+  margin: 0 20px; /* Простор помеѓу линковите */
+  font-size: 18px; /* Големина на текстот */
+  transition: color 0.3s ease; /* Прелазен ефект за боја */
+}
+
+.nav-links a:hover {
+  color: #ff69b4; /* Темна розова боја при ховер */
+  text-decoration: underline; /* Подебелен текст при ховер */
+}
+

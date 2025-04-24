@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './Register.module.css'; // Стилови за Register компонентата
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -42,8 +43,8 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h2>Registration</h2>
+    <div className={styles.formContainer}>
+      <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -65,7 +66,7 @@ const Register = () => {
         />
         <button type="submit">Sign up</button>
       </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p>{error}</p>}
     </div>
   );
 };

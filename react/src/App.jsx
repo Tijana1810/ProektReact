@@ -1,6 +1,7 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from "./Login";
 import Register from "./Register";
+import Navbar from './Navbar';  // Импорт на Navbar компонентата
 
 const App = () => {
   return (
@@ -8,11 +9,8 @@ const App = () => {
       <div>
         <h1>My Library</h1>
 
-        <nav>
-          <Link to="/">Home</Link> |{" "}
-          <Link to="/login">Login</Link> |{" "}
-          <Link to="/register">Register</Link> |{" "}
-        </nav>
+        {/* Овде го користиш само Navbar компонентата */}
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<h2>Welcome to my library!</h2>} />

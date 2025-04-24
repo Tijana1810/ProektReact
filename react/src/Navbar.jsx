@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom";
-import "./Navbar.css";
+import { Link } from 'react-router-dom';
+import styles from './Navbar.module.css'; // Правилно увезување на CSS Modules
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <h2>My Library</h2>
-      <div className="nav-links">
+    <nav className={styles.navbar}>
+      <h2 className={styles.title}>My Library</h2>
+      <div className={styles['nav-links']}>
         <Link to="/">Home</Link>
         <Link to="/login">Login</Link>
         <Link to="/register">Register</Link>
-        <Link to="/books">Books</Link>
       </div>
     </nav>
   );
