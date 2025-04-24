@@ -24,6 +24,13 @@
       "email": "kristijan123@gmail.com",
       "password": "141810",
       "selectedBook": "To Kill a Mockingbird"
+    },
+    {
+      "id": "205c",
+      "username": "Tijana",
+      "email": "tijanaa10@gmail.com",
+      "password": "tijana00",
+      "selectedBook": "Twilight"
     }
   ]
 }
