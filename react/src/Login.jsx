@@ -22,7 +22,7 @@ const Login = () => {
         setError("Incorrect password. Please try again.");
       } else {
         localStorage.setItem("user", JSON.stringify(user));
-        navigate("/"); // Navigacija ka početnoj stranici
+        navigate("/"); 
       }
     } catch (error) {
       console.error("Error:", error);
