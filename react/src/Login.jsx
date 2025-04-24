@@ -1,36 +1,60 @@
-
 import { useState } from "react";
+import styles from "./login.module.css"; // Import CSS module
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("User Logged In: ", { email, password });
+    try {
+      const response = await fetch("http://localhost:5000/users");
+      const users = await response.json();
+      const user = users.find((user) => user.email === email);
 
-    
+      if (!user) {
+        setError("Email not found. Please register first.");
+      } else if (user.password !== password) {
+        setError("Incorrect password. Please try again.");
+      } else {
+        localStorage.setItem("user", JSON.stringify(user));
+        navigate("/"); // Navigacija ka početnoj stranici
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setError("Something went wrong. Please try again.");
+    }
   };
 
   return (
-    <div>
-      <h2>  Login</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Log in</button>
-      </form>
+    <div className={styles.container}>
+      <div className={styles.formContainer}>
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={styles.inputField}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className={styles.inputField}
+          />
+          <button type="submit" className={styles.button}>
+            Log in
+          </button>
+        </form>
+        {error && <p className={styles.errorMessage}>{error}</p>}
+      </div>
     </div>
   );
 };

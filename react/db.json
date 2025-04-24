@@ -11,6 +11,19 @@
       "username": "tijana",
       "email": "tijana123@gmail.com",
       "password": "ana12345"
+    },
+    {
+      "id": "8eb5",
+      "username": "Kiki",
+      "email": "kiki123@gmail.com",
+      "password": "kikitijana10"
+    },
+    {
+      "id": "a48d",
+      "username": "Kristijan",
+      "email": "kristijan123@gmail.com",
+      "password": "141810",
+      "selectedBook": "To Kill a Mockingbird"
     }
   ]
 }

@@ -1,11 +1,12 @@
 import { useState } from "react";
-import styles from './Register.module.css'; // Стилови за Register компонентата
+import styles from './Register.module.css'; 
 
 const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null); // За грешки
+  const [selectedBook, setSelectedBook] = useState(""); 
+  const [error, setError] = useState(null); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,7 +14,8 @@ const Register = () => {
     const userData = {
       username,
       email,
-      password
+      password,
+      selectedBook
     };
 
     try {
@@ -32,10 +34,11 @@ const Register = () => {
       const result = await response.json();
       console.log("User Registered: ", result);
       alert("Registration Successful!");
-      // Resetiraj полја по успешна регистрација
+    
       setUsername("");
       setEmail("");
       setPassword("");
+      setSelectedBook(""); 
     } catch (error) {
       console.error("Error: ", error);
       setError("Failed to register user. Please try again.");
@@ -64,6 +67,21 @@ const Register = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        
+        <select 
+          value={selectedBook}
+          onChange={(e) => setSelectedBook(e.target.value)}
+          className={styles["input-field"]} 
+        >
+          <option value="">Select a Book</option>
+          <option value="Harry Potter">Harry Potter</option>
+          <option value="Twilight">Twilight</option>
+          <option value="The fault in our stars">The fault in our stars</option>
+          <option value="Divergent">Divergent</option>
+          <option value="Vampire academy">Vampire academy</option>
+          <option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
+        </select>
+        
         <button type="submit">Sign up</button>
       </form>
       {error && <p>{error}</p>}
