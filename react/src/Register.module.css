@@ -2,16 +2,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     flex-direction: column;
     height: 100vh;
     margin: 0;
     background-color: #f7f7f7;
   }
   
+=======
+    flex-direction: column; 
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7; 
+  }
+  
+
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f
   .formContainer {
     background-color: #fff0f6; 
     padding: 40px;
     border-radius: 8px;
+<<<<<<< HEAD
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
@@ -25,6 +36,15 @@ body {
     margin-bottom: 10px;
   }
   
+=======
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px; 
+  }
+  
+
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f
   .formContainer h2 {
     text-align: center;
     color: #ff4f87; 
@@ -35,17 +55,30 @@ body {
   .formContainer input {
     width: 100%;
     padding: 12px;
+<<<<<<< HEAD
     margin-bottom: 20px;
     border: 2px solid #ff80ab;
+=======
+    margin-bottom: 20px; 
+    border: 2px solid #ff80ab; 
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f
     border-radius: 5px;
     font-size: 16px;
   }
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f
   .formContainer input:focus {
     border-color: #ff3385;
     outline: none;
   }
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f
   .formContainer button {
     width: 100%;
     padding: 14px;
@@ -58,16 +91,25 @@ body {
     transition: background-color 0.3s ease;
   }
   
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f
   .formContainer button:hover {
     background-color: #ff3385; 
   }
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f
   .formContainer p {
     color: #ff3385; 
     font-size: 14px;
     text-align: center;
   }
   
+<<<<<<< HEAD
   .formContainer select:focus {
     border-color: #ff3385;
     outline: none;
@@ -82,3 +124,5 @@ body {
     font-size: 16px;
   }
   
+=======
+>>>>>>> 77d611ec5bfb05fed6b0f7a8a886bbc8b8a14d5f

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './Navbar.module.css'; // Правилно увезување на CSS Modules
+import styles from './Navbar.module.css'; 
 
 const Navbar = () => {
   return (
