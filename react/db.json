@@ -1,36 +1,82 @@
 {
-  "users": [
-    {
-      "id": "8d3e",
-      "username": "gabi",
-      "email": "gabi@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "063f",
-      "username": "tijana",
-      "email": "tijana123@gmail.com",
-      "password": "ana12345"
-    },
-    {
-      "id": "8eb5",
-      "username": "Kiki",
-      "email": "kiki123@gmail.com",
-      "password": "kikitijana10"
-    },
-    {
-      "id": "a48d",
-      "username": "Kristijan",
-      "email": "kristijan123@gmail.com",
-      "password": "141810",
-      "selectedBook": "To Kill a Mockingbird"
-    },
-    {
-      "id": "205c",
-      "username": "Tijana",
-      "email": "tijanaa10@gmail.com",
-      "password": "tijana00",
-      "selectedBook": "Twilight"
-    }
-  ]
-}
+    "users": [
+      {
+        "id": "8d3e",
+        "username": "gabi",
+        "email": "gabi@gmail.com",
+        "password": "1234"
+      },
+      {
+        "id": "063f",
+        "username": "tijana",
+        "email": "tijana123@gmail.com",
+        "password": "ana12345"
+      },
+      {
+        "id": "8eb5",
+        "username": "Kiki",
+        "email": "kiki123@gmail.com",
+        "password": "kikitijana10"
+      },
+      {
+        "id": "a48d",
+        "username": "Kristijan",
+        "email": "kristijan123@gmail.com",
+        "password": "141810",
+        "selectedBook": "To Kill a Mockingbird"
+      },
+      {
+        "id": "205c",
+        "username": "Tijana",
+        "email": "tijanaa10@gmail.com",
+        "password": "tijana00",
+        "selectedBook": "Twilight"
+      },
+      {
+        "id": "9851",
+        "username": "tijana10",
+        "email": "tijana31@gmail.com",
+        "password": "123456",
+        "selectedBook": "Divergent"
+      }
+    ],
+    "books": [
+      {
+        "id": 1,
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "description": "A boy discovers he's a wizard and goes on magical adventures."
+      },
+      {
+        "id": 2,
+        "title": "Twilight",
+        "author": "Stephenie Meyer",
+        "description": "A romantic fantasy novel involving vampires."
+      },
+      {
+        "id": 3,
+        "title": "The fault in our stars",
+        "author": "John Green",
+        "description": "A touching love story between two cancer-stricken teenagers."
+      },
+      {
+        "id": 4,
+        "title": "Divergent",
+        "author": "Veronica Roth",
+        "description": "A post-apocalyptic science fiction novel."
+      },
+      {
+        "id": 5,
+        "title": "Vampire academy",
+        "author": "Richelle Mead",
+        "description": "A vampire princess is trained at a hidden academy."
+      },
+      {
+        "id": 6,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "A story of racial injustice in the Deep South."
+      }
+    ]
+  }
+  

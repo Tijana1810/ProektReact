@@ -1,18 +1,18 @@
-/* Главни стилови за целата страница */
+
 body {
-    background-color: #f1f1f1; /* Светла позадина */
-    background-image: url('https://path_to_image.com/image.jpg'); /* Слика за позадина (по избор) */
-    background-size: cover;
-    background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Главна содржина */
-  .main-content {
-    padding: 20px;
-    background-color: white; /* Белa позадина за главната содржина */
-    border-radius
-  
+  background-color: #f1f1f1; 
+  background-image: url('https://path_to_image.com/image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main-content {
+  padding: 20px;
+  background-color: white; 
+  border-radius:10px;
+}

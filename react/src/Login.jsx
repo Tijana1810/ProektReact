@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./login.module.css"; // Import CSS module
+import styles from "./login.module.css"; 
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -22,7 +22,7 @@ const Login = () => {
         setError("Incorrect password. Please try again.");
       } else {
         localStorage.setItem("user", JSON.stringify(user));
-        navigate("/"); // Navigacija ka početnoj stranici
+        navigate("/"); 
       }
     } catch (error) {
       console.error("Error:", error);

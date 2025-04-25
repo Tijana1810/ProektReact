@@ -7,6 +7,7 @@ const Navbar = () => {
       <h2 className={styles.title}>My Library</h2>
       <div className={styles['nav-links']}>
         <Link to="/">Home</Link>
+        <Link to="/books">Books</Link>
         <Link to="/login">Login</Link>
         <Link to="/register">Register</Link>
       </div>
